@@ -1,2 +1,6 @@
 require(tidyverse)
-1+2
+library(palmerpenguins)
+
+penguins %>% 
+  ggplot(aes(x = bill_depth_mm)) + 
+  geom_histogram()
